@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  background-color: #000;
+}
+nav.sticky {
+  position: relative;
+  background-color: #fff;
+}
+nav.sticky div .logo {
+  color: #000;
+}
+nav div .logo {
+  margin-top: 10px;
+  font-family: "Lucida Sans";
+  color: #fff;
+  position: relative;
+}
+nav div .logo span {
+  color: #e95704;
+  font-style: italic;
+}
+nav div .trait {
+  width: 50%;
+  height: 2px;
+  background-color: #e95704;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+nav .nav-list {
+  display: flex;
+}
+nav .nav-list .list {
+  list-style: none;
+  margin: 13px;
+}
+nav .nav-list .list a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav-list .list a:hover {
+  color: #e95704;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 2px;
+}
+nav .nav-list .list .boule1 {
+  width: 7%;
+  height: 12%;
+  background-color: #e95704;
+}
+nav .nav-list .list .boule {
+  width: 3%;
+  height: 12%;
+  background-color: #e95704;
+}
+.titre1 {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  padding: 10px;
+}
+.titre1 .photo {
+  width: 70%;
+  /* margin-bottom: 10px; */
+  border-bottom: 1px #fff solid;
+  box-shadow: 0px 3px #e95704;
+}
+.titre1 .texte {
+  /* position: fixed; */
+  width: 290px;
+  color: #fff;
+  font-size: 2em;
+  /* margin-top: 25px; */
+}
+.moi {
+  display: block;
+  text-align: center;
+  background-color: #000;
+}
+.moi .presentation {
+  display: block;
+  align-items: center;
+}
+.moi .presentation h2 {
+  font-size: 2.8em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.moi .presentation h2 span {
+  color: #e95704;
+}
+.moi .presentation p {
+  font-size: 18px;
+  width: 70%;
+  margin-left: 14%;
+  height: 50%;
+  color: #fff;
+}
+.moi iframe {
+  border: 1px #fff solid;
+  padding: 22px;
+  border-radius: 7px;
+}
+.projet {
+  text-align: center;
+  font-size: 2.8em;
+  margin: 50px auto;
+  color: #333;
+}
+.projet span {
+  color: #e95704;
+}
+
+.grilles {
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  grid-gap: 40px;
+  margin-bottom: 10%;
+}
+.grid-item {
+  width: 300px;
+  height: 200px;
+  background: #cbc9c8;
+  /* border: 1px #333 solid; */
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 1px 3px 0px 1px #333;
+}
+.grid-item span {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: -44px;
+  color: #fff;
+  text-decoration: none;
+}
+footer {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+}
+footer h4 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+footer h4 span {
+  color: #e95704;
+}
+footer .icon {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 22px;
+}
+footer .icon i {
+  /* color: #e95704; */
+  font-size: 25px;
+}
+footer .icon i span {
+  margin-left: 8px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.bxl-whatsapp {
+  color: green;
+}
+.bxl-facebook {
+  color: blue;
+}
+.bx-envelope {
+  color: goldenrod;
+}
+@media screen and (max-width: 1175px) {
+  .titre1 {
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+  }
+  .titre1 .photo {
+    width: 100%;
+  }
+  .titre1 .texte {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 16px;
+  }
+  .moi .presentation h2 {
+    font-size: 2em;
+    color: gray;
+    margin-bottom: 17px;
+  }
+  .moi .presentation p {
+    font-size: 14px;
+    width: 70%;
+    margin-left: 14%;
+    height: 50%;
+    text-align: center;
+  }
+  .moi iframe {
+    border: 1px #000 solid;
+    padding: 15px;
+    border-radius: 7px;
+    width: 300px;
+    height: 180px;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    /* padding: 5px; */
+  }
+  footer h4 {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  footer h4 span {
+    color: #e95704;
+  }
+  footer .icon {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    padding: 8px;
+  }
+  footer .icon i {
+    /* color: #e95704; */
+    font-size: 25px;
+  }
+  footer .icon i span {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
