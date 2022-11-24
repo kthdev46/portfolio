@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* body {
+  background-image: url("../image/photo1.png");
+  background-size: cover;
+  position: absolute;
+} */
 nav {
   position: fixed;
   display: flex;
@@ -24,9 +30,10 @@ nav div .logo {
   font-family: "Lucida Sans";
   color: #fff;
   position: relative;
+  font-family: "Shadows Into Light", cursive;
 }
 nav.sticky div .logo {
-  color: #cbc9c8;
+  color: #333;
 }
 nav div .logo span {
   color: #e95704;
@@ -48,9 +55,10 @@ nav .nav-list .list {
   margin: 13px;
 }
 nav.sticky .nav-list .list a {
-  color: #cbc9c8;
+  color: #333;
 }
 nav .nav-list .list a {
+  font-family: "Shadows Into Light", cursive;
   text-decoration: none;
   font-size: 18px;
   color: #fff;
@@ -76,19 +84,23 @@ nav .nav-list .list .boule {
   align-items: center;
   background-color: #000;
   padding: 10px;
+  color: #cbc9c8;
 }
 .titre1 .photo {
-  width: 70%;
-  /* margin-bottom: 10px; */
+  /* position: fixed; */
+  width: 40%;
+  margin-bottom: 10px;
   border-bottom: 1px #fff solid;
   box-shadow: 0px 3px #e95704;
+  /* filter: drop-shadow(0 0 5px #fff); */
+  /* opacity: 0.6; */
 }
 .titre1 .texte {
-  /* position: fixed; */
-  width: 290px;
+  width: 420px;
   color: #fff;
-  font-size: 2em;
-  /* margin-top: 25px; */
+  font-size: 3em;
+  margin-top: 25px;
+  font-family: "Shadows Into Light", cursive;
 }
 .moi {
   display: block;
@@ -100,7 +112,8 @@ nav .nav-list .list .boule {
   align-items: center;
 }
 .moi .presentation h2 {
-  font-size: 2.8em;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 3em;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -108,6 +121,7 @@ nav .nav-list .list .boule {
   color: #e95704;
 }
 .moi .presentation p {
+  font-family: "Shadows Into Light", cursive;
   font-size: 18px;
   width: 70%;
   margin-left: 14%;
@@ -120,6 +134,7 @@ nav .nav-list .list .boule {
   border-radius: 7px;
 }
 .projet {
+  font-family: "Shadows Into Light", cursive;
   text-align: center;
   font-size: 2.8em;
   margin: 50px auto;
@@ -139,6 +154,7 @@ nav .nav-list .list .boule {
   justify-content: center;
   grid-gap: 40px;
   margin-bottom: 10%;
+  /* border: 1px #333 solid; */
 }
 .grid-item {
   width: 300px;
@@ -147,9 +163,15 @@ nav .nav-list .list .boule {
   /* border: 1px #333 solid; */
   font-size: 18px;
   text-align: center;
-  box-shadow: 1px 3px 0px 1px #333;
+  transition: all 0.4s ease-in-out;
+}
+.grid-item:hover {
+  transition: all 0.4s ease-in-out;
+
+  box-shadow: 1px 3px 0px 1px rgba(230, 171, 75, 0.6);
 }
 .grid-item span {
+  font-family: "Shadows Into Light", cursive;
   position: absolute;
   margin-top: 90px;
   margin-left: -44px;
@@ -167,6 +189,7 @@ footer h4 {
   font-size: 16px;
   color: #fff;
   margin-bottom: 10px;
+  font-family: "Shadows Into Light", cursive;
 }
 footer h4 span {
   color: #e95704;
@@ -182,6 +205,7 @@ footer .icon i {
   font-size: 25px;
 }
 footer .icon i span {
+  font-family: "Shadows Into Light", cursive;
   margin-left: 8px;
   font-size: 15px;
   color: #fff;

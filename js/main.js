@@ -5,9 +5,11 @@ window.addEventListener("scroll", () => {
   navbarre.classList.toggle("sticky", window.scrollY > 10);
 });
 
-new Typewriter(texte, {})
+new Typewriter(texte, {
+  loop: true,
+})
   .typeString(
-    'Le grand futur dans le <span style="color: #e95704; font-style: italic">NUMERIQUE</span> pour construire l\'Univer'
+    'Le grand futur dans le <span style="color: #e95704;">NUMERIQUE</span> pour construire l\'Univer'
   )
   .pauseFor(300)
   .deleteChars(8)
